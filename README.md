@@ -8,13 +8,13 @@ weighting with the highest Sharpe ratio — that is, the portfolio with the
 best risk-reward trade-off. I then compare the simulation result to the
 actual efficient frontier, calculated using Modern Portfolio Theory.
 
-For my set of six S&P 500 assets, the simulation results align cleanly with
+For my set of five S&P 500 assets, the simulation results align cleanly with
 the theoretical frontier:
 
 ![Efficient Frontier](Figure_1.png)
 
-Each dot is the result of the simulated portfolio.The blue line is the exact frontier (closed-form solution), the gold diamond
-is the Global Minimum Variance (GMV) portfolio, and the red star is the
+Each dot is the result of the simulated portfolio.The blue line is the exact frontier (closed-form solution), 
+the gold diamond is the Global Minimum Variance (GMV) portfolio, and the red star is the
 simulated portfolio with the highest Sharpe ratio.
 
 ## Method
