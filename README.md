@@ -13,7 +13,7 @@ the theoretical frontier:
 
 ![Efficient Frontier](Figure_1.png)
 
-The blue line is the exact frontier (closed-form solution), the gold diamond
+Each dot is the result of the simulated portfolio.The blue line is the exact frontier (closed-form solution), the gold diamond
 is the Global Minimum Variance (GMV) portfolio, and the red star is the
 simulated portfolio with the highest Sharpe ratio.
 
