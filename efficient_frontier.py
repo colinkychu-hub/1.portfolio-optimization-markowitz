@@ -89,7 +89,7 @@ ones = np.ones(num_assets) # a vector of 1
 
 a = ones @V_inv @ ones
 
-# Step 2: calculate the weight, expected returns and volatility of the GMV portfolio
+# Step 3: calculate the weight, expected returns and volatility of the GMV portfolio
 
 GMV_weights = (1/a)* (V_inv @ ones)
 GMV_returns = GMV_weights @ annual_returns.values
@@ -118,7 +118,7 @@ print(GMV_returns, b / a)   # should match almost exactly
 
 mu = annual_returns.values
 
-b = ones @ V_inv @ mu   # b = 1' V^-1 mu
+b = ones @ V_inv @ mu   
 d = mu @ V_inv @ mu      # d = mu'V^-1 mu
 
 det = a * d - b**2      # determinant of the 2x2 system (a b; b d)
