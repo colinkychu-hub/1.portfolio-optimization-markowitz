@@ -6,7 +6,7 @@ In this repo, I examine one of the common optimization approaches as a
 learning exercise: using Monte Carlo simulation to find the portfolio
 weighting with the highest Sharpe ratio — that is, the portfolio with the
 best risk-reward trade-off. I then compare the simulation result to the
-actual efficient frontier, calculated using Modern Portfolio Theory.
+theoretical efficient frontier, calculated using Modern Portfolio Theory.
 
 For my set of five S&P 500 assets, the simulation results align cleanly with
 the theoretical frontier:
