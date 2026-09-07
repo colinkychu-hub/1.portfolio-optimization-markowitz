@@ -6,7 +6,7 @@ In this repo, I examine one of the common optimization approaches as a
 learning exercise: using Monte Carlo simulation to find the portfolio
 weighting with the highest Sharpe ratio — that is, the portfolio with the
 best risk-reward trade-off. I then compare the simulation result to the
-actual efficient frontier, calculated using the Modern Portfolio Theory.
+actual efficient frontier, calculated using Modern Portfolio Theory.
 
 For my set of six S&P 500 assets, the simulation results align cleanly with
 the theoretical frontier:
@@ -30,7 +30,7 @@ plot one against the other.
 I also carry out a second exercise: finding the Global Minimum Variance
 (GMV) portfolio directly, solved via the closed-form solution from
 mean-variance optimization theory. I then calculate the portfolio with 
-the lowest volatilty for each given expected return across the feasible 
+the lowest volatility for each given expected return across the feasible 
 range to plot the actual frontier. 
 
 ## Conclusion and Caveats
@@ -40,7 +40,7 @@ modelling skills — this is the first in a series of personal finance
 projects I'm using to record that learning journey.
 
 Here, I've applied a fairly simple concept to demonstrate an alternative
-approach to finding the efficient portfolio: simulation. This is a useful
+approach to finding the efficient frontier using simulation; it can be a useful
 approach when trading constraints are introduced, especially non-linear
 restrictions that are difficult to solve with a closed-form solution.
 
