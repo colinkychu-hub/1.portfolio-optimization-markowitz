@@ -18,12 +18,12 @@ else:
     print("Missing count")
     print(missing_count)
 
-print (f"Obtained {len(data)} days of price data for {len(tickers)} ticekrs.\n")
+print (f"Obtained {len(data)} days of price data for {len(tickers)} tickers.\n")
 # ================================
-# 1. Monte Carlo simultation
+# 1. Monte Carlo simulation
 # ================================
 
-#Step 1: daily retun calculation for each ticker
+#Step 1: daily return calculation for each ticker
 returns = data.pct_change()
 
 #Step 2: mean return and cov matrix
@@ -40,7 +40,7 @@ num_assets = len(tickers)
 portfolio_weight = np.random.random((num_portfolio, num_assets))
 portfolio_weight = portfolio_weight/portfolio_weight.sum(axis=1)[:,np.newaxis]
 
-#Step 4: Calculate portfolio return and portfolio volatiity
+#Step 4: Calculate portfolio return and portfolio volatility
 port_ret = portfolio_weight@annual_returns
 port_vol = np.sqrt(np.sum((portfolio_weight@annual_cov)*portfolio_weight, axis =1))
 risk_free_rate = 0.025
@@ -119,7 +119,7 @@ print(GMV_returns, b / a)   # should match almost exactly
 mu = annual_returns.values
 
 b = ones @ V_inv @ mu   # b = 1' V^-1 mu
-d = mu @ V_inv @ mu      # d = u'V^-1 mu
+d = mu @ V_inv @ mu      # d = mu'V^-1 mu
 
 det = a * d - b**2      # determinant of the 2x2 system (a b; b d)
 
