@@ -6,7 +6,7 @@ In this repo, I examine one of the common optimization approaches as a
 learning exercise: using Monte Carlo simulation to find the portfolio
 weighting with the highest Sharpe ratio — that is, the portfolio with the
 best risk-reward trade-off. I then compare the simulation result to the
-actual efficient frontier, calculated exactly using Modern Portfolio Theory.
+actual efficient frontier, calculated using the Modern Portfolio Theory.
 
 For my set of six S&P 500 assets, the simulation results align cleanly with
 the theoretical frontier:
@@ -20,7 +20,8 @@ simulated portfolio with the highest Sharpe ratio.
 ## Method
 
 The portfolio setup is fairly straightforward to build in Python. I first
-obtain the stock data through Yahoo Finance (`yfinance`). I then simulate
+obtain the stock data through Yahoo Finance (`yfinance`). So one have a different portfolio
+could easily change the ticker name in the code to update the portfolio. I then simulate
 20,000 random portfolios, with all weights constrained between 0 and 1 so
 that each portfolio is fully invested and long-only (no short-selling). For
 each simulated portfolio, I compute the expected return and volatility, and
@@ -28,7 +29,9 @@ plot one against the other.
 
 I also carry out a second exercise: finding the Global Minimum Variance
 (GMV) portfolio directly, solved via the closed-form solution from
-mean-variance optimization theory, rather than by simulation.
+mean-variance optimization theory. I then calculate the portfolio with 
+the lowest volatilty for each given expected return across the feasible 
+range to plot the actual frontier. 
 
 ## Conclusion and Caveats
 
